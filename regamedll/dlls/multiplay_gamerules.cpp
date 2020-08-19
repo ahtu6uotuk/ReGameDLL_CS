@@ -3601,7 +3601,11 @@ float EXT_FUNC CHalfLifeMultiplay::__API_HOOK(FlPlayerFallDamage)(CBasePlayer *p
 {
 
 #ifdef REGAMEDLL_ADD
-	if (!falldamage.value)
+	if (pPlayer->m_iTeam == TeamName::TERRORIST && !t_falldamage.value)
+	{
+		return 0.0f;
+	}
+	if (pPlayer->m_iTeam == TeamName::CT && !ct_falldamage.value)
 	{
 		return 0.0f;
 	}

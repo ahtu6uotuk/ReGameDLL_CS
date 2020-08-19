@@ -173,7 +173,8 @@ extern cvar_t ff_damage_reduction_grenade_self;
 extern cvar_t ff_damage_reduction_other;
 extern cvar_t radio_timeout;
 extern cvar_t radio_maxinround;
-extern cvar_t falldamage;
+extern cvar_t ct_falldamage;
+extern cvar_t t_falldamage;
 
 extern cvar_t ct_default_grenades;
 extern cvar_t ct_give_player_knife;
